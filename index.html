@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProdByDeva - Beat Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(to right, #6f00ff, #bb00ff);
+      font-family: 'Orbitron', sans-serif;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    .beat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .beat {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .beat:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 0, 255, 0.2);
+    }
+    .beat h3 {
+      margin: 0 0 0.5rem 0;
+      color: #bb86fc;
+    }
+    audio {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    .buy-btn {
+      margin-top: 1rem;
+      display: inline-block;
+      background-color: #bb00ff;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .buy-btn:hover {
+      background-color: #9900cc;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ProdByDeva</h1>
+    <p>🔥 Exclusive Beats for Artists & Creators 🔥</p>
+  </header>
+
+  <section class="beat-grid">
+    <div class="beat">
+      <h3>Dreamscape</h3>
+      <audio controls>
+        <source src="beats/dreamscape.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <a class="buy-btn" href="https://www.paypal.com/yourlink" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="beat">
+      <h3>Midnight Bounce</h3>
+      <audio controls>
+        <source src="beats/midnight_bounce.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <a class="buy-btn" href="https://www.paypal.com/yourlink" target="_blank">Buy Now</a>
+    </div>
+
+    <div class="beat">
+      <h3>Lo-Fi Chill</h3>
+      <audio controls>
+        <source src="beats/lofi_chill.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <a class="buy-btn" href="https://www.paypal.com/yourlink" target="_blank">Buy Now</a>
+    </div>
+  </section>
+
+</body>
+</html>
