@@ -4,27 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ProdByDeva - Beat Store</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #121212;
-      color: #fff;
+      font-family: 'Lato', sans-serif;
+      background-color: #F7F7F7;
+      color: #333333;
     }
     header {
       text-align: center;
       padding: 2rem 1rem;
-      background: linear-gradient(to right, #6f00ff, #bb00ff);
-      font-family: 'Orbitron', sans-serif;
+      background: #E5E5E5;
+      font-family: 'Lato', sans-serif;
+      border-bottom: 1px solid #ddd;
     }
     header h1 {
       margin: 0;
       font-size: 3rem;
-      letter-spacing: 2px;
+      color: #222;
+      font-weight: 700;
+    }
+    header p {
+      color: #666;
+      font-weight: 300;
     }
     .beat-grid {
       display: grid;
@@ -35,35 +41,37 @@
       margin: auto;
     }
     .beat {
-      background-color: #1e1e1e;
+      background-color: #ffffff;
       border-radius: 12px;
-      padding: 1rem;
+      padding: 1.5rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .beat:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(255, 0, 255, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
     .beat h3 {
       margin: 0 0 0.5rem 0;
-      color: #bb86fc;
+      color: #444;
+      font-weight: 700;
     }
     audio {
       width: 100%;
       margin-top: 0.5rem;
     }
-    .buy-btn {
+    .download-btn {
       margin-top: 1rem;
       display: inline-block;
-      background-color: #bb00ff;
+      background-color: #B0B0B0;
       color: white;
       text-decoration: none;
       padding: 0.6rem 1.2rem;
       border-radius: 8px;
       transition: background 0.3s ease;
     }
-    .buy-btn:hover {
-      background-color: #9900cc;
+    .download-btn:hover {
+      background-color: #8A8A8A;
     }
     @media (max-width: 600px) {
       header h1 {
@@ -86,7 +94,7 @@
         <source src="beats/dreamscape.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <a class="buy-btn" href="https://www.paypal.com/yourlink" target="_blank">Buy Now</a>
+      <a class="download-btn" href="beats/dreamscape.mp3" download>Download Now</a>
     </div>
 
     <div class="beat">
@@ -95,7 +103,7 @@
         <source src="beats/midnight_bounce.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <a class="buy-btn" href="https://www.paypal.com/yourlink" target="_blank">Buy Now</a>
+      <a class="download-btn" href="beats/midnight_bounce.mp3" download>Download Now</a>
     </div>
 
     <div class="beat">
@@ -104,9 +112,10 @@
         <source src="beats/lofi_chill.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      <a class="buy-btn" href="https://www.paypal.com/yourlink" target="_blank">Buy Now</a>
+      <a class="download-btn" href="beats/lofi_chill.mp3" download>Download Now</a>
     </div>
   </section>
 
 </body>
 </html>
+
